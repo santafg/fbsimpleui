@@ -1,0 +1,139 @@
+.topbarContainer {
+  height: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  background-color: #3d79bd;
+  padding: 0 2rem;
+}
+
+.topbarContainer .left {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.topbarContainer .left .logo {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.topbarContainer .center {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.topbarContainer .center .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding-right: 1rem;
+}
+
+.topbarContainer .center .search input {
+  outline: none;
+  border: none;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  font-size: 1.25rem;
+}
+
+.topbarContainer .center .search .searchIcon {
+  font-size: 2rem;
+  -webkit-box-flex: 0.75;
+      -ms-flex: 0.75;
+          flex: 0.75;
+}
+
+.topbarContainer .right {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.topbarContainer .right .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.topbarContainer .right .icons .iconDiv {
+  position: relative;
+  margin-left: .5rem;
+}
+
+.topbarContainer .right .icons .iconDiv .icon {
+  margin-left: 1rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.topbarContainer .right .icons .iconDiv .count {
+  height: 1rem;
+  width: 1rem;
+  font-size: .95rem;
+  border-radius: .25rem;
+  padding-left: .2rem;
+  position: absolute;
+  background-color: tomato;
+  right: -.25rem;
+  top: -.25rem;
+}
+
+.topbarContainer .right .icons .account {
+  margin-left: 3rem;
+}
+
+.topbarContainer .right .icons .account .profilePic {
+  height: 2.5rem;
+  width: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=topbar.css.map */

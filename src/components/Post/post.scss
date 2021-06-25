@@ -1,0 +1,83 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin input {
+  outline: none;
+  border: none;
+}
+.postContainer {
+  padding: 1rem;
+  // @include bor();
+  .postBox {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.15rem 0.5rem 0.01rem rgb(182, 182, 182);
+    // height: 11rem;
+    .top {
+      @include flex();
+      justify-content: flex-start;
+      .topLeft {
+          flex: 3;
+          @include flex();
+          justify-content: flex-start;
+        .ProfilePic {
+          height: 1.75rem;
+          width: 1.75rem;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: .5rem;
+          cursor: pointer;
+        }
+        .name{
+            margin-right: .5rem;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+      }
+      .topRight{
+          flex: .1;
+          cursor: pointer;
+      }
+    }
+    .center{
+        @include flex();
+        align-items: flex-start;
+        flex-direction: column;
+        margin: .5rem 0;
+        .title{
+            font-size: 1.25rem;
+        }
+        .postPic{
+            height: 25rem;
+            width: 100%;
+            margin: .5rem 0;
+        }
+    }
+    .bottom{
+      display: flex;
+      align-items: center;
+      margin-top: -.5rem;
+      .bottomLeft{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .reactIcon{
+          margin-right: .25rem;
+          height: 1.75rem;
+          width: 1.75rem;
+        }
+      }
+      .bottomRight{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

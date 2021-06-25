@@ -1,0 +1,93 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin input {
+  outline: none;
+  border: none;
+}
+
+.topbarContainer {
+  height: 4rem;
+  width: 100%;
+  @include flex();
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  background-color: rgb(61, 121, 189);
+  padding: 0 2rem;
+  .left {
+    flex: 2;
+    // @include bor();
+    .logo {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .center {
+    flex: 4;
+    // @include bor();
+    .search {
+      @include flex();
+      background-color: white;
+      border-radius: 2rem;
+      padding-right: 1rem;
+      input {
+        @include input();
+        flex: 9;
+        font-size: 1.25rem;
+      }
+      .searchIcon {
+        font-size: 2rem;
+        flex: 0.75;
+      }
+    }
+  }
+  .right {
+    flex: 4;
+    // @include bor();
+    @include flex();
+    justify-content: space-between;
+    color: white;
+    .icons{
+        @include flex();
+        margin-left: auto;
+        .iconDiv{
+            position: relative;
+            // @include bor();
+            margin-left: .5rem;
+          .icon{
+                  margin-left: 1rem;
+                  font-size: 1.75rem;
+                  cursor: pointer;
+          }
+          .count{
+            height: 1rem;
+            width: 1rem;
+            font-size: .95rem;
+            border-radius: .25rem;
+            padding-left: .2rem;
+            position: absolute;
+            background-color: tomato;
+            right: -.25rem;
+            top: -.25rem;
+          }
+        }
+        .account{
+            margin-left: 3rem;
+            .profilePic{
+                height: 2.5rem;
+                width: 2.5rem;
+                object-fit: cover;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+}

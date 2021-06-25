@@ -1,0 +1,113 @@
+.shareContainer {
+  padding: 1rem;
+}
+
+.shareContainer .shareBox {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0.15rem 0.5rem 0.01rem #b6b6b6;
+          box-shadow: 0 0.15rem 0.5rem 0.01rem #b6b6b6;
+  height: 11rem;
+}
+
+.shareContainer .shareBox .topSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shareContainer .shareBox .topSection .profilePic {
+  margin-top: -4rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.shareContainer .shareBox .topSection textarea {
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  width: 92.5%;
+}
+
+.shareContainer .shareBox hr {
+  margin: 1rem 0;
+}
+
+.shareContainer .bottomSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shareContainer .bottomSection .shareOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shareContainer .bottomSection .shareOptions .shareOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.shareContainer .bottomSection .shareOptions .shareOption .shareicon {
+  margin-right: 0.25rem;
+}
+
+.shareContainer .bottomSection .btn {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.shareContainer .bottomSection .btn button {
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #28a744;
+  color: white;
+}
+/*# sourceMappingURL=share.css.map */

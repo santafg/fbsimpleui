@@ -1,0 +1,110 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin input {
+  outline: none;
+  border: none;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  .sidebar {
+    flex: 1;
+    // @include bor();
+    height: calc(100vh - 4rem);
+  }
+  .profileFeed {
+    flex: 4;
+    // @include bor();
+    height: calc(100vh - 4rem);
+    overflow-y: scroll;
+    .upper {
+      @include flex();
+      position: relative;
+      flex-direction: column;
+      .details {
+        @include flex();
+        flex-direction: column;
+        padding: 2rem 0;
+        h1 {
+          margin-top: 1rem;
+        }
+      }
+      .CoverPic {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+      }
+      .profilePic {
+        border-radius: 50%;
+        height: 10rem;
+        object-fit: cover;
+        width: 10rem;
+        position: absolute;
+        bottom: 5rem;
+        border: 0.3rem solid white;
+      }
+    }
+    .lower {
+      display: flex;
+      .feed {
+        flex: 7;
+      }
+      .rightBar {
+        flex: 3;
+        padding: 0 2rem;
+        .info {
+          p {
+            padding: 0.15rem 0;
+            b{
+                margin-right: .25rem;
+            }
+          }
+        }
+        .friendsDiv{
+            margin-top: 1rem;
+            h3{
+                margin: .5rem 0;
+            }
+            .friends {
+              flex-wrap: wrap;
+            //   @include bor();
+              display: flex;
+            //   justify-content: space-around;
+              .friend {
+                // @include bor();
+                margin-bottom: 0.5rem;
+                @include flex();
+                justify-content: flex-start;
+                flex-direction: column;
+                // width: 33%;
+                
+                margin-right: 0.5rem;
+                .friendPic1 {
+                //   @include bor();
+                  height: 5.5rem;
+                  width: 5.5rem;
+                  object-fit: cover;
+                  border-radius: .25rem;
+                }
+                p{
+                    // @include bor();
+                    // @include flex();
+                    margin-top: 0.25rem;
+                    text-align: center;
+                    width: 5.5rem;
+                    font-size: .8rem;
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+}

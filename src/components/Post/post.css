@@ -1,0 +1,138 @@
+.postContainer {
+  padding: 1rem;
+}
+
+.postContainer .postBox {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0.15rem 0.5rem 0.01rem #b6b6b6;
+          box-shadow: 0 0.15rem 0.5rem 0.01rem #b6b6b6;
+}
+
+.postContainer .postBox .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.postContainer .postBox .top .topLeft {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.postContainer .postBox .top .topLeft .ProfilePic {
+  height: 1.75rem;
+  width: 1.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.postContainer .postBox .top .topLeft .name {
+  margin-right: .5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.postContainer .postBox .top .topRight {
+  -webkit-box-flex: .1;
+      -ms-flex: .1;
+          flex: .1;
+  cursor: pointer;
+}
+
+.postContainer .postBox .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: .5rem 0;
+}
+
+.postContainer .postBox .center .title {
+  font-size: 1.25rem;
+}
+
+.postContainer .postBox .center .postPic {
+  height: 25rem;
+  width: 100%;
+  margin: .5rem 0;
+}
+
+.postContainer .postBox .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -.5rem;
+}
+
+.postContainer .postBox .bottom .bottomLeft {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.postContainer .postBox .bottom .bottomLeft .reactIcon {
+  margin-right: .25rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.postContainer .postBox .bottom .bottomRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=post.css.map */

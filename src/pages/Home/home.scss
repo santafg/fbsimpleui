@@ -1,0 +1,32 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin bor {
+    border: 0.1rem solid black;
+  }
+  @mixin input {
+    outline: none;
+    border: none;
+  }
+
+  .homeContainer{
+    display: flex;
+    justify-content: center;
+      .sidebar{
+          flex: 1;
+          // @include bor();
+          height: calc(100vh - 4rem);
+      }
+      .feed{
+          flex: 3;
+          // @include bor();
+          height: calc(100vh - 4rem);
+      }
+      .rightbar{
+          flex: 2;
+          // @include bor();
+          height: calc(100vh - 4rem);
+      }
+  }

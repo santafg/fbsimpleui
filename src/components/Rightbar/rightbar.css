@@ -1,0 +1,73 @@
+.rightbarContainer {
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.rightbarContainer .rightbarBox .birthdayBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightbarContainer .rightbarBox .birthdayBox .giftPic {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.rightbarContainer .rightbarBox .rightBarAd {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+.rightbarContainer .rightbarBox h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList {
+  list-style: none;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList .onlineFriend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList .onlineFriend .profilePic {
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList .onlineFriend .profilePic .pic {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList .onlineFriend .profilePic .online {
+  height: .8rem;
+  width: .8rem;
+  background-color: limegreen;
+  position: absolute;
+  border-radius: 50%;
+  right: -.2rem;
+  border: .15rem solid white;
+}
+
+.rightbarContainer .rightbarBox .onlineFriendList .onlineFriend span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=rightbar.css.map */

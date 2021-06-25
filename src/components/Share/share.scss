@@ -1,0 +1,76 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin input {
+  outline: none;
+  border: none;
+}
+
+.shareContainer {
+  padding: 1rem;
+  .shareBox {
+    //   @include bor();
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    box-shadow: 0 0.15rem 0.5rem 0.01rem rgb(182, 182, 182);
+    height: 11rem;
+    .topSection {
+      display: flex;
+      align-items: center;
+      .profilePic {
+        margin-top: -4rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0.75rem;
+      }
+      textarea {
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        width: 92.5%;
+      }
+    }
+    hr {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.shareContainer .bottomSection {
+  display: flex;
+  align-items: center;
+  .shareOptions {
+    @include flex();
+    flex: 7;
+    justify-content: space-between;
+    .shareOption {
+      @include flex();
+      cursor: pointer;
+      .shareicon {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+  .btn {
+    flex: 3;
+    //   @include bor();
+    @include flex();
+    justify-content: flex-end;
+    button {
+      padding: 0.35rem 0.75rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background-color: rgb(40, 167, 68);
+      color: white;
+    }
+  }
+}

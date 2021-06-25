@@ -1,0 +1,87 @@
+/* width */
+::-webkit-scrollbar {
+  width: .25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c2c2c2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebarContainer {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebarContainer .box {
+  padding: 1rem;
+}
+
+.sidebarContainer .box .sidebarList {
+  list-style: none;
+}
+
+.sidebarContainer .box .sidebarList .sidebarListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.sidebarContainer .box .sidebarList .sidebarListItem span {
+  margin-left: .5rem;
+  font-size: 1.25rem;
+}
+
+.sidebarContainer .box button {
+  cursor: pointer;
+  border: none;
+  padding: .25rem 1rem;
+  font-weight: 600;
+}
+
+.sidebarContainer .box hr {
+  margin: .5rem 0;
+}
+
+.friendList {
+  list-style: none;
+}
+
+.friendList .friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.friendList .friend .profilePic {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.friendList .friend .name {
+  margin-left: .5rem;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=sidebar.css.map */

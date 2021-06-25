@@ -1,0 +1,83 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin bor {
+    border: 0.1rem solid black;
+  }
+  @mixin input {
+    outline: none;
+    border: none;
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: .25rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(194, 194, 194);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .sidebarContainer{
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      .box{
+        //   @include flex();
+        padding: 1rem;
+          .sidebarList{
+            //   @include bor();
+              list-style: none;
+              .sidebarListItem{
+                //   @include bor();
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: .5rem;
+                  span{
+                      margin-left: .5rem;
+                      font-size: 1.25rem;
+                  }
+              }
+          }
+          button{
+              cursor: pointer;
+              border: none;
+              padding: .25rem 1rem;
+              font-weight: 600;
+          }
+          hr{
+              margin: .5rem 0;
+          }
+      }
+  }
+  .friendList{
+      list-style: none;
+      .friend{
+          display: flex;
+          align-items: center;
+          .profilePic{
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-bottom: 0.5rem;
+          }
+          .name{
+            //   @include bor();
+            margin-left: .5rem;
+            font-size: 1rem;
+          }
+      }
+  }

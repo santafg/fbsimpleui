@@ -1,0 +1,159 @@
+.profileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileContainer .sidebar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: calc(100vh - 4rem);
+}
+
+.profileContainer .profileFeed {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: calc(100vh - 4rem);
+  overflow-y: scroll;
+}
+
+.profileContainer .profileFeed .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profileContainer .profileFeed .upper .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+.profileContainer .profileFeed .upper .details h1 {
+  margin-top: 1rem;
+}
+
+.profileContainer .profileFeed .upper .CoverPic {
+  height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileContainer .profileFeed .upper .profilePic {
+  border-radius: 50%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 10rem;
+  position: absolute;
+  bottom: 5rem;
+  border: 0.3rem solid white;
+}
+
+.profileContainer .profileFeed .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profileContainer .profileFeed .lower .feed {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.profileContainer .profileFeed .lower .rightBar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 0 2rem;
+}
+
+.profileContainer .profileFeed .lower .rightBar .info p {
+  padding: 0.15rem 0;
+}
+
+.profileContainer .profileFeed .lower .rightBar .info p b {
+  margin-right: .25rem;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv {
+  margin-top: 1rem;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv h3 {
+  margin: .5rem 0;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv .friends {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv .friends .friend {
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0.5rem;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv .friends .friend .friendPic1 {
+  height: 5.5rem;
+  width: 5.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .25rem;
+}
+
+.profileContainer .profileFeed .lower .rightBar .friendsDiv .friends .friend p {
+  margin-top: 0.25rem;
+  text-align: center;
+  width: 5.5rem;
+  font-size: .8rem;
+}
+/*# sourceMappingURL=profile.css.map */
